@@ -1,0 +1,46 @@
+/*---------------------------------------*\
+  Simple panel
+  - Usado para login e "esqueci a senha"
+\*---------------------------------------*/
+.aw-simple-panel {
+    color: #777777;
+    text-align: center;
+  }
+    
+  .aw-simple-panel__box {
+    padding: 20px;
+    padding-bottom: 5px;
+    border: 1px solid #82C7E5;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+  .aw-simple-panel__footer {
+    padding: 10px 0;
+  }
+.aw-layout-simple-page {
+    background-color: #f6f6f6;
+  }
+  .aw-layout-simple-page__container {
+    display: block;
+    max-width: 420px;
+    margin: auto;
+    padding: 0 10px;
+    padding-top: 10%;
+  }
+  .aw-layout-loading {
+    position: fixed;
+    z-index: 9998;
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 65px;
+    text-align: center;
+  }
+  .aw-layout-loading__container {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .imglogin{
+    border-radius: 200px;
+    width: 100px;
+}
