@@ -1,0 +1,50 @@
+<html>
+<body>
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Data, Hora e Login </title>
+        <input id="date" type="date" value="2020-06-01">
+        <h1>Cadastre-se para acessar o sistema</h1>
+        <script language="JavaScript">
+            function validar(){ // só permitirá o envio se os dados forem fornecidos
+        if(document.login.nome.value == ""){
+            alert("Forneça o nome do usuário");
+            document.login.nome.focus();
+        return false;
+        }
+        else if(document.login.senha.value == ""){
+        alert("Forneça a senha do usuário");
+        document.login.senha.focus();
+        return false;
+        }
+        else{
+        return true;
+        }
+        }
+        </script>
+    </head>
+
+    <form name="login" action="gravar.php" method="post"
+    onsubmit="return validar()">
+    Usuário:<br>
+    <input type="text" id="nome" name="nome"><br>
+    Senha:<br>
+    <input type="password" id="senha" name="senha"><br>
+    <input type="submit" value="Entrar!">
+    </form>
+    </body>
+
+    <!-- from para anexo do erro -->
+    <form>
+        <input type="button" value="Clique Aqui" onclick="msg()">
+      </form>
+      
+      <script>
+      function msg() {
+        alert("Você clicou no botão!");
+      }
+      </script>
+
+</html>
