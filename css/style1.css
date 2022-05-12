@@ -1,0 +1,75 @@
+/* Estilização da tela home */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica; font-size: 20px;
+}
+#menu-hor {
+    list-style: none;
+    padding: 5px;
+    background-color: #791FA5;
+}
+
+#menu-hor li{
+    display: inline;
+}
+
+#menu-hor li a{
+    color: #FFF;
+    padding: 10px;
+    text-decoration: none;
+    display: inline;
+    color: #D8C6E1;
+}
+
+#row-a {
+    margin-top: 0px;
+    padding-top: 2vh;
+    color: blue;
+    display: block;
+}
+
+fieldset {
+    border: 80px brown solid;
+    border-radius: 10px;
+    width: 60%;
+    padding: 10px;
+ }
+form {
+    padding: 40px;
+    background-color: #FFFFFF;
+}
+ 
+ table, th,td {
+    border: 0px;
+    border-collapse: collapse;
+} 
+
+ th, td {
+    padding: 5px 30px;
+    text-align: left;
+ }
+ #col {
+    background-color: rgb(21, 4, 98);
+    color: white;
+ }
+
+table tr:nth-child(odd){
+    background-color: #ddd;
+}
+table tr:nth-child(even){
+    background-color: yellow;
+}
+ #button {
+    display: inline;
+    background-color: rgb(148,76,184);
+    outline: none;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+ 
+ /* Fim da Estilização da tela home */
