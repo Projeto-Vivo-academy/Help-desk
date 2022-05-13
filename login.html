@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device width, initial-scale-1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleLogin.css">
     <meta name="author" content="Miriam Bullem">
     <title>Controle de Acesso</title>
 </head>
@@ -13,22 +13,27 @@
        <div class="card">
             <div class="card-top"> 
                 <img class="imglogin" src="img/vivo-119.png" alt="">
-                <h2 class="title">Sistema de Help Desk</h2>
+                <h2 class="title">Help Desk</h2>
             </div>
             <div class="card-group">
-                <label>Usúario</label>
-                <input type="text" name="email" placeholder="Digite seu nome" required autocomplete="off">
+                <label>Usuario</label>
+                <input id="txtUsuario" type="text" name="email" placeholder="Digite seu nome" required autocomplete="off">
             </div>
             <div class="card-group">
                 <label>Senha</label>
-                <input type="password" name="senha" placeholder="Digite sua senha" required>
+                <input id="txtSenha" type="password" name="senha" placeholder="Digite sua senha" required>
             </div>
             <div class="card-group">
-                <label><input type="checkbox"> Lembre-me</label>
+                <label><input type="checkbox"> Lembrar Senha</label>
             </div>
-            <div class="card-group btn">
-                <button type="submit" value="logar">LOGAR</button>
+            <!-- <div class="card-group btn">
+                <button type="submit" value="logar" href="index.html">LOGAR</button>
+            </div> -->
+
+            <div id="botao-entrar">
+                <a class="btn-link" href="index.html">Entrar</a>
             </div>
+            
             <a href="menu.html"></a>
             <div class="pull-right">
                 <a href="esqueceu-a-senha.html">Esqueceu a senha?</a>
