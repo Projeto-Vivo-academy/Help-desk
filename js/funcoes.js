@@ -14,7 +14,7 @@ $(function () {
 		tbChamados = [];
 
 	// Função para adicionar registros
-		function Adicionar() {
+	function Adicionar() {
 		// 	//variável para verificar se número de código já existe
 		// 	var Usuario = GetUsuario("Codigo", $("#txtCodigo").val());
 		// 	 //Caso existe é informado ao cliente
@@ -22,13 +22,13 @@ $(function () {
 		// 	 	alert("Código já cadastrado.");
 		// 	 	return;
 		//  }
-		
+
 		var chamado = JSON.stringify({
 			Usuario: $("#txtUsuario").val(),
 			Senha: $("#txtSenha").val(),
 			Tipo_solicitacao: $("#txtTipo_solicitacao").val(),
 			Prioridade: $("#txtPrioridade").val(),
-			Descricao: $("txtObs").val()
+			Descricao: $("txtDescricao").val()
 			// Data: $(".txtdata").val(),
 			// Hora: $(".txthora").val(),
 			// Codigo: $(".txtCodigo").val()
@@ -49,7 +49,7 @@ $(function () {
 			Usuario: $("#txtUsuario").val(),
 			Tipo_solicitacao: $("#txtTipo_solicitacao").val(),
 			Prioridade: $("#txtPrioridade").val(),
-			Descricao: $("#txtObs").val()
+			Descricao: $("#txtDescricao").val()
 			// Data: $("#txtData").val(),
 			// Hora: $("#txtHora").val()
 
@@ -68,8 +68,8 @@ $(function () {
 			"<th></th>" +
 			"	<th>Usuario</th>" +
 			"   <th>Prioridade</th>" +
-			"	<th>Tipo_solicitacao</th>" +
-			"	<th>Descricao</th>" +
+			"	<th>Tipo_solicitação</th>" +
+			"	<th>Descrição</th>" +
 			"	<th>Status</th>" +
 			// "   <th>Data</th>" +
 			// "   <th>Hora</th>" +
@@ -124,16 +124,12 @@ $(function () {
 
 	// $("#txtCodigo").val(ultconv + 1);
 
-
-
 	// //Função status
 
 	// $("#txtUsuario").change(function () {
 	// 	var Usuario = $(this).val();
 
 	// })
-
-
 
 
 	// Ação com base nos eventos de formulário
@@ -149,11 +145,11 @@ $(function () {
 		indice_selecionado = parseInt($(this).attr("alt"));
 		var cli = JSON.parse(tbChamados[indice_selecionado]);
 		$("#txtUsuario").val(cli.usuario);
-		$("#txtPrioridade").val(cli.usuario);
+		$("#txtPrioridade").val(cli.Prioridade);
 		$("#txtTipo_solicitacao").val(cli.Tipo_solicitacao);
-		$("#txtObs").val(cli.Descricao);
-		$("#txtData").val(cli.Data);
-		$("#txtHora").val(cli.Hora);
+		$("#txtDescricao").val(cli.Descricao);
+		// $("#txtData").val(cli.Data);
+		// $("#txtHora").val(cli.Hora);
 		$("#txtCodigo").attr("readonly", "readonly");
 		$("#txtUsuario").focus();
 	});

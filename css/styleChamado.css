@@ -3,22 +3,81 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
     font-family:sans-serif; font-size: 15px;
     color: #380B61;
 }
 
+
 body{
-    margin: auto;
-    background-color: #791FA5;
+    background-color: #F0F8FF;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    margin-left: 2%;
+    margin-top: 2%;
+    justify-content: center;
 }
 
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    border-radius: 5px;
+}
 
 ul{
     text-decoration: none;
 }
 
-#menu-hor {
+/* Elementos de classe "campo" */
+.campo {
+    margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text da tag <select> e da tag <textarea>*/
+.campo input[type="text"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 1.2em;
+    background: #31da5b;
+    border: 0;
+    margin-bottom: 2em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position:sticky ;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+    cursor: pointer;
+} 
+
+/* #menu-hor {
     list-style: none;
     padding: 5px;
     background-color: #791FA5;
@@ -62,26 +121,26 @@ form {
  th, td {
     padding: 5px 30px;
     text-align: left;
- }
- #col {
-    background-color: rgb(21, 4, 98);
+ } */
+ /* #col {
+    background-color: rgb(42, 22, 133);
     color: white;
- }
+ } */
 
-table tr:nth-child(odd){
-    background-color: rgb(212, 212, 205);
+* table tr:nth-child(odd){
+    background-color: rgb(240, 194, 213);
 }
 table tr:nth-child(even){
-    background-color: rgb(226, 226, 173);
+    background-color: rgb(248, 198, 255);
 }
- #button {
+ /* #button {
     display: inline;
-    background-color: rgb(148,76,184);
+    background-color: rgb(36, 5, 51);
     outline: none;
     height: 30px;
     line-height: 30px;
     padding-left: 20px;
     padding-right: 20px;
-}
+} */ 
  
  /* Fim da Estilização da tela home */

@@ -48,7 +48,7 @@ body{
     border: 0px;
     padding-bottom: 0.2cm;
     padding-inline-start: 5cm;
-    text-align: center;
+    position:relative;
     }
 
 #botao-entrar{
@@ -57,10 +57,11 @@ body{
 
 .btn button:hover{
     background-image: linear-gradient(to right,#D7B6E2,#5D1293);
+    
 }
 .imglogin{
    /* border-radius: 100px; */
-    width: 80px;
+    width: 200px;
 }
 
 .title{
